@@ -1,0 +1,32 @@
+#form-container {
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  color: #000;
+  border-radius: 8px;
+  padding: 30px;
+  font-size: 1em;
+  box-shadow: 0 8px 40px -8px rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
+
+input {
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+  background-color: #fff;
+  width: 88%;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#submit-button {
+  box-shadow: 0 0 40px 8px rgba(0, 0, 0, 0.3);
+  width: 75%;
+  position: relative;
+  left: 12%;
+}
