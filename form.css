@@ -1,6 +1,6 @@
 #form-container {
   background-color: #fff;
-  width: 500px;
+  width: 385px;
   height: 400px;
   color: #000;
   border-radius: 8px;
@@ -13,6 +13,7 @@
 input {
   border-radius: 8px;
   border: 2px solid #f0f0f0;
+  color: #000;
   background-color: #fff;
   width: 88%;
   padding: 0.6em 1.2em;
@@ -22,6 +23,13 @@ input {
 .form-group {
   margin-bottom: 25px;
   position: relative;
+}
+
+.form-group i {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  visibility: hidden;
 }
 
 #submit-button {

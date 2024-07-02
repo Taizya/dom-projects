@@ -4,11 +4,11 @@ export function setupCounter(element) {
   const updateCounter = (num = 0) => {
     element.innerHTML = `
       <div>
-      <h1>Counter</h1>
-      <p>The count is ${num}</p>
-      <button id='add-button'>plus</button>
-      <button id='reset-button'>reset</button>
-      <button id='minus-button'>minus</button>
+          <h1>Counter</h1>
+          <p>The count is ${num}</p>
+          <button id='add-button'>plus</button>
+          <button id='reset-button'>reset</button>
+          <button id='minus-button'>minus</button>
       </div>
     `
     const add = () => {
