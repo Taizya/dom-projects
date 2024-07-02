@@ -1,8 +1,12 @@
-import "./form.css";
-import { validateUsername, validateEmail, validatePassword, validatePassword2 } from "./formValidations";
+import {
+  validateUsername,
+  validateEmail,
+  validatePassword,
+  validatePassword2,
+} from "./formValidations";
 
 export function setupForms(element) {
-    element.innerHTML = `
+  element.innerHTML = `
     <div>
         <h1>Registration Form</h1>
         <div id="form-container">
@@ -41,20 +45,21 @@ export function setupForms(element) {
     </div>
     `;
 
-    const usernameElement = document.querySelector('#username')
-    const usernameContainer = document.getElementById("username-container")
-        usernameElement.addEventListener('change', () => {
-        validateUsername(usernameElement, usernameContainer)
-    })
+  const usernameElement = document.querySelector("#username");
+  const usernameContainer = document.getElementById("username-container");
+  usernameElement.addEventListener("change", () => {
+    validateUsername(usernameElement, usernameContainer);
+  });
 
-    const emailElement = document.querySelector('#email-address')
-    emailElement.addEventListener('Input changed:', validateEmail(emailElement))
+  const emailElement = document.querySelector("#email-address");
+  emailElement.addEventListener("Input changed:", validateEmail(emailElement));
 
-    const passwordElement = document.querySelector('#password')
-    passwordElement.addEventListener('change', validatePassword(passwordElement))
+  const passwordElement = document.querySelector("#password");
+  passwordElement.addEventListener("change", validatePassword(passwordElement));
 
-    const password2Element = document.querySelector('#password-2')
-    password2Element.addEventListener('change', validatePassword2(password2Element))
-
+  const password2Element = document.querySelector("#password-2");
+  password2Element.addEventListener(
+    "change",
+    validatePassword2(password2Element),
+  );
 }
-

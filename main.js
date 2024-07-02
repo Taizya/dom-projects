@@ -1,7 +1,9 @@
 import "./style.css";
-import { setupCounter } from "./counter.js";
-import { setupDadJokes } from "./jokes.js";
-import { setupForms } from "./forms.js";
+import "./form.css";
+
+import { setupCounter } from "./modules/counter/counter.js";
+import { setupDadJokes } from "./modules/jokes/jokes.js";
+import { setupForms } from "./modules/forms/forms.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -33,5 +35,5 @@ jokesButton.addEventListener("click", () => {
 const formsButton = document.querySelector("#forms-button");
 
 formsButton.addEventListener("click", () => {
-    setupForms(divElement)
-})
+  setupForms(divElement);
+});
