@@ -32,6 +32,14 @@ input {
   visibility: hidden;
 }
 
+.form-group small {
+  color: #e74c3c;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  visibility: hidden;
+}
+
 #submit-button {
   box-shadow: 0 0 40px 8px rgba(0, 0, 0, 0.3);
   width: 75%;
